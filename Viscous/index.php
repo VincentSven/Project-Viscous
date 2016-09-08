@@ -3,7 +3,7 @@
 ?>
 <html>
 	<head>
-		
+		<link href="stijl.css" />
 	</head>
 	<body>
 		<div id="wrapper">
