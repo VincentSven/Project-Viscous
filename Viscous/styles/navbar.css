@@ -1,0 +1,41 @@
+nav ul{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	overflow: hidden;
+	border-style:solid;
+	border-color:white;
+	border-radius:10px;
+	border-width:0px;
+}
+
+nav ul:after {content: ""; clear: both; display: block;}
+
+nav ul li{
+	float:left;
+	width: 20%;
+}
+
+nav ul li a{
+	display:block;
+	height:40px;
+	width:100%;
+	margin:0px;
+	background:linear-gradient(yellow,#D6C400);
+	background:-o-linear-gradient(yellow,#D6C400);
+	background:-moz-linear-gradient(yellow,#D6C400);
+	background:-webkit-linear-gradient(yellow,#D6C400);
+	text-align:center;
+	padding-top:10px;
+	font-size:18pt;
+	text-decoration:none;
+	color:black;
+}
+
+nav ul li a:hover {
+	background:#D1CA00;
+}
+
+nav ul li:hover > ul{
+	display:block;
+}
