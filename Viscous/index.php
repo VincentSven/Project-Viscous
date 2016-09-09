@@ -9,13 +9,15 @@
 				<h1> Project Viscous</h1>
 			</div>
 			<div id="menu">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">inloggen</a></li>
-					<li><a href="#">info</a></li>
-					<li><a href="#">forum</a></li>
-					<li><a href="#">spelregels</a></li>
-				</ul>
+				<nav>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">inloggen</a></li>
+						<li><a href="#">info</a></li>
+						<li><a href="#">forum</a></li>
+						<li><a href="#">spelregels</a></li>
+					</ul>
+				</nav>
 			</div>
 			<div id="content">
 				content
