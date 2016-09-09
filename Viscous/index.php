@@ -1,13 +1,10 @@
-<?php
-
-?>
 <html>
 	<head>
-		<link href="stijl.css" />
+		<link href="styles/style.css" />
 	</head>
 	<body>
 		<div id="wrapper">
-			<div id="head">
+			<div id="header">
 				head
 			</div>
 			<div id="menu">
@@ -15,7 +12,7 @@
 			</div>
 			<div id="content">
 				content
-			</div>		
+			</div>
 		</div>
 		<div id="footer">
 			footer
