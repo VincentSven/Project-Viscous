@@ -11,11 +11,21 @@
 			<div id="menu">
 				<nav>
 					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">inloggen</a></li>
-						<li><a href="#">info</a></li>
-						<li><a href="#">forum</a></li>
-						<li><a href="#">spelregels</a></li>
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#">inloggen</a>
+						</li>
+						<li>
+							<a href="#">info</a>
+						</li>
+						<li>
+							<a href="#">forum</a>
+						</li>
+						<li>
+							<a href="#">spelregels</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
