@@ -1,7 +1,13 @@
 #wrapper {
 	width: 80%;
 	margin: 0 auto;
-	height: 90%;
+	min-height: 100%;
+	margin-bottom: -50px;
+}
+
+#wrapper:after {
+	content: "";
+	display: block;
 }
 
 #header {
@@ -18,4 +24,8 @@
 
 #footer {
 	background-color: green;
+}
+
+#footer, #wrapper:after {
+	height: 50px;
 }
