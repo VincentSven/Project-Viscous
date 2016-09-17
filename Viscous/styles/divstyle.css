@@ -23,9 +23,23 @@
 }
 
 #footer {
-	background-color: green;
+	background-color: black;
+	border-top: blue; 
+	border-width: .5em;
+	border-style: solid;
 }
 
 #footer, #wrapper:after {
 	height: 50px;
+}
+
+#toe {
+	font-style:	italic;
+	width: 80%;
+	margin: 0 auto;
+}
+
+#toe p{
+	color: white;
+	margin-top: .5%;
 }

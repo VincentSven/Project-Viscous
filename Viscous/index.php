@@ -37,7 +37,9 @@ if ($maintenance == TRUE){
 			</div>
 		</div>
 		<div id="footer">
-			<p>copyrighted by The Unargroup &copy; <?php year();?>.</p>
+			<div id="toe">
+				<p>copyrighted by The Unargroup &copy; <?php year();?>.</p>				
+			</div>
 		</div>
 	</body>
 </html>
