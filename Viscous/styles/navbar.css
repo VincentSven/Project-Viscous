@@ -31,10 +31,10 @@ nav ul li a{
 	height:40px;
 	width:100%;
 	margin:0px;
-	background:linear-gradient(#0044DF,#1300FF);
-	background:-o-linear-gradient(#0044DF,#1300FF);
-	background:-moz-linear-gradient(#0044DF,#1300FF);
-	background:-webkit-linear-gradient(#0044DF,#1300FF);
+	background:linear-gradient(lime,green);
+	background:-o-linear-gradient(lime,green);
+	background:-moz-linear-gradient(lime,green);
+	background:-webkit-linear-gradient(lime,green);
 	text-align:center;
 	padding-top:10px;
 	font-size:18pt;
@@ -43,7 +43,7 @@ nav ul li a{
 }
 
 nav ul li a:hover {
-	background:#1300FF;
+	background:green;
 }
 
 nav ul li:hover > ul {
