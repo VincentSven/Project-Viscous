@@ -2,7 +2,7 @@
 	//This is the config file
 	
 	//site status variables
-	$maintenance 				= false;
+	$maintenance 				= FALSE;
 	
 	//site definition variables
 	$pretitle 					= 'Project';

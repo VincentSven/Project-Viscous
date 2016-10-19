@@ -2,7 +2,7 @@
 	width: 80%;
 	margin: 0 auto;
 	min-height: 100%;
-	margin-bottom: -66px;
+	margin-bottom: -25px;
 }
 
 #wrapper:after {
@@ -10,28 +10,33 @@
 	display: block;
 }
 
+#top {
+	background-color: #BD0808;
+	border-style: solid;
+    border-width: 0px 0px .2em 0px;
+	border-color: #BDBD08;
+}
+
 #header {
-	background-color: gray;
+	border-style: solid;
+	border-color: ;
 }
 
 #menu {
-	background-color: white;
+	margin: .5% 0 .5% 0;
 }
 
 #content {
 	background-color: red;
+	margin-top: .2em;
 }
 
 #footer {
 	background-color: #00FF57;
 	border-color: #00FF57;
 	border-top: blue; 
-	border-width: .5em;
+	border-width: .2em;
 	border-style: solid;
-}
-
-#footer, #wrapper:after {
-	height: 50px;
 }
 
 #toe {
@@ -42,5 +47,5 @@
 
 #toe p{
 	color: white;
-	margin-top: .5%;
+	margin: .5% 0px .5% 0px;
 }

@@ -7,8 +7,6 @@ if ($maintenance == TRUE){
 } elseif ($maintenance == FALSE) {
 ?>
 
-
-
 <html>
 	<head>
 		<link href="styles/divstyle.css" type="text/css" rel="stylesheet"/>
@@ -18,19 +16,21 @@ if ($maintenance == TRUE){
 	</head>
 	<body>
 		<div id="wrapper">
-			<div id="header">
-				<h1> Project Viscous</h1>
-			</div>
-			<div id="menu">
-				<nav>
-					<ul>
-						<li><a href="index.php">Home</a></li>
-						<li><a href="#">Inloggen</a></li>
-						<li><a href="#">Info</a></li>
-						<li><a href="#">Forum</a></li>
-						<li><a href="#">Spelregels</a></li>
-					</ul>
-				</nav>
+			<div id="top">
+				<div id="header">
+					<h1> Project Viscous</h1>
+				</div>
+				<div id="menu">
+					<nav>
+						<ul>
+							<li><a href="index.php">Home</a></li>
+							<li><a href="#">Inloggen</a></li>
+							<li><a href="#">Info</a></li>
+							<li><a href="#">Forum</a></li>
+							<li><a href="#">Spelregels</a></li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 			<div id="content">
 				<p>deze site is een zieke site a matty.</p>
