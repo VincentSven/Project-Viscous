@@ -5,10 +5,9 @@
 	$maintenance 				= FALSE;
 	
 	//site definition variables
-	$pretitle 					= 'Project';
+	$pretitle 					= 'Sola';
 	$seperator 					= ' - ';
-	$posttitle 					= 'Viscous';
-	
+	$posttitle 					= 'Lands';
 	$title 						= $pretitle . $seperator . $posttitle;
 
 

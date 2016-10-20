@@ -3,10 +3,6 @@ nav ul {
 	margin: 0px;
 	padding: 0px;
 	overflow: hidden;
-	border-style: solid;
-	border-color: white;
-	border-radius: 10px;
-	border-width: 0px;
 }
 
 nav ul:after {
@@ -17,13 +13,13 @@ nav ul:after {
 
 nav ul li{
 	float:left;
-	width: 19%;
-	margin: 0 .5%;
+	width: 18%;
+	margin: 0 .4%;
 	overflow: hidden;
 	border-style:solid;
-	border-color:white;
-	border-radius:10px;
-	border-width:0px;
+	border-color:black;
+	border-width: .2em;
+	margin: .2em;
 }
 
 nav ul li a{
@@ -31,10 +27,6 @@ nav ul li a{
 	height:40px;
 	width:100%;
 	margin:0px;
-	background:linear-gradient(lime,green);
-	background:-o-linear-gradient(lime,green);
-	background:-moz-linear-gradient(lime,green);
-	background:-webkit-linear-gradient(lime,green);
 	text-align:center;
 	padding-top:10px;
 	font-size:18pt;

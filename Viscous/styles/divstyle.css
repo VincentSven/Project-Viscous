@@ -2,7 +2,7 @@
 	width: 80%;
 	margin: 0 auto;
 	min-height: 100%;
-	margin-bottom: -25px;
+	margin-bottom: -2.35em;
 }
 
 #wrapper:after {
@@ -12,9 +12,6 @@
 
 #top {
 	background-color: #BD0808;
-	border-style: solid;
-    border-width: 0px 0px .2em 0px;
-	border-color: #BDBD08;
 }
 
 #header {
@@ -28,7 +25,7 @@
 
 #content {
 	background-color: red;
-	margin-top: .2em;
+	margin-top: 1%;
 }
 
 #footer {
@@ -37,6 +34,7 @@
 	border-top: blue; 
 	border-width: .2em;
 	border-style: solid;
+	height: 2em;
 }
 
 #toe {

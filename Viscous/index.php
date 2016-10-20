@@ -18,7 +18,7 @@ if ($maintenance == TRUE){
 		<div id="wrapper">
 			<div id="top">
 				<div id="header">
-					<h1> Project Viscous</h1>
+					<h1>Sola lands</h1>
 				</div>
 				<div id="menu">
 					<nav>
