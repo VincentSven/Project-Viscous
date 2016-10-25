@@ -1,2 +1,4 @@
-# Project Viscous made bij Vincent Sven de Jong and Gijs
-# 
+# Project Viscous made by
+# Vincent Sven de Jong
+# Gijs Lagerwij
+# Jaimy Heijkoop
