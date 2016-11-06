@@ -16,6 +16,8 @@ if ($maintenance == TRUE){
 	</head>
 	<body>
 		<div id="wrapper">
+			<div class="spacer">
+			</div>
 			<div id="top">
 				<div id="header">
 					<h1>Sola lands</h1>

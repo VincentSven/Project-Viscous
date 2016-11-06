@@ -23,3 +23,9 @@ html {
 	background-image: url("../img/Cloudy bg.jpg");
 	background-size: 100%;
 }
+
+.spacer {
+	margin: 0;
+	padding: 0;
+	height: 1%;
+}

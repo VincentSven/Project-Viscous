@@ -13,13 +13,12 @@ nav ul:after {
 
 nav ul li{
 	float:left;
-	width: 18%;
-	margin: 0 .4%;
+	width: 19%;
 	overflow: hidden;
 	border-style:solid;
 	border-color:black;
 	border-width: .2em;
-	margin: .2em;
+	margin: .265em;
 }
 
 nav ul li a{
