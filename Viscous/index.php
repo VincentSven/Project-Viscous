@@ -35,7 +35,15 @@ if ($maintenance == TRUE){
 				</div>
 			</div>
 			<div id="content">
-				<p>deze site is een zieke site a matty.</p>
+				<div id="content_left">
+					<p>Dit is een gloedhemeltjenieuwe site! Wat is het?
+						Nu nog niks. Wat word het? Een cool gameplatform!
+						(hopen we) Wat heb ik eraan? Geen idee, maar het is zo uniek dat we een site MOESTEN maken.
+						dus....</p>
+				</div>
+				<div id="update posts">
+					Hier alle updates graag! Kan iemand er een update register even in PHP'en? Danku!
+				</div>
 			</div>
 		</div>
 		<div id="footer">

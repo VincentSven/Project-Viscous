@@ -24,10 +24,16 @@
 }
 
 #content {
-	background-color: red;
 	margin-top: 1%;
 }
 
+#content_left {
+	margin: 0 1% 0 0;
+	float: left;
+	background-color: red;
+	opacity: 0.4;
+	width: 35%;
+}
 #footer {
 	background-color: #00FF57;
 	border-color: #00FF57;
