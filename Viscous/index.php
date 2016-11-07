@@ -6,7 +6,6 @@ if ($maintenance == TRUE){
 	echo 'Deze website is bezig met wat verbouwingen, kom later terug';
 } elseif ($maintenance == FALSE) {
 ?>
-
 <html>
 	<head>
 		<link href="styles/divstyle.css" type="text/css" rel="stylesheet"/>
@@ -41,14 +40,14 @@ if ($maintenance == TRUE){
 						(hopen we) Wat heb ik eraan? Geen idee, maar het is zo uniek dat we een site MOESTEN maken.
 						dus....</p>
 				</div>
-				<div id="update posts">
-					Hier alle updates graag! Kan iemand er een update register even in PHP'en? Danku!
+				<div id="update_posts">
+					<p>Hier alle updates graag! Kan iemand er een update register even in PHP'en? Danku!</p>
 				</div>
 			</div>
 		</div>
 		<div id="footer">
 			<div id="toe">
-				<p>copyrighted by The Unargroup &copy; <?php year();?>.</p>				
+				<p class="small">copyrighted by The Unargroup &copy; <?php year();?>.</p>				
 			</div>
 		</div>
 	</body>

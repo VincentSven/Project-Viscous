@@ -16,7 +16,8 @@
 
 #header {
 	border-style: solid;
-	border-color: ;
+	border-color: #000000;
+	padding: .2%;
 }
 
 #menu {
@@ -25,15 +26,29 @@
 
 #content {
 	margin-top: 1%;
+	min-height: 40%;
 }
 
 #content_left {
 	margin: 0 1% 0 0;
 	float: left;
-	background-color: red;
-	opacity: 0.4;
-	width: 35%;
+	background-color: rgba(255, 0, 0, 0.5);
+	width: 34%;
+	padding: .5%;
+	border-color: #000000;
+	border-style: solid;
 }
+
+#update_posts {
+	margin: 0 0 0 0;
+	float: left;
+	background-color: rgba(255, 0, 0, 0.5);
+	width: 62%;
+	padding: .5%;
+	border-color: #000000;
+	border-style: solid;
+}
+
 #footer {
 	background-color: #00FF57;
 	border-color: #00FF57;
