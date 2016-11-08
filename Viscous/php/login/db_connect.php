@@ -20,6 +20,7 @@ function sec_session_start() {
 
 	session_start();
 	session_regenerate_id(true);
+	echo 'DEBUG: Session ID ' . session_id();
 }
 
 function login($email, $password, $mysqli) {
@@ -58,6 +59,7 @@ function login($email, $password, $mysqli) {
 					$username = preg_replace("/[^a-zA-Z0-9_\-]+/", "", $username);
 					$_SESSION['username'] = $username;
 					$_SESSION['login_string'] = hash('sha512', $db_password . $user_browser);
+				
 					// Login successful.
 					return 'success';
 				} else {
@@ -107,19 +109,22 @@ function login_check($mysqli) {
 					// Logged In!!!!
 					return true;
 				} else {
+					echo 'Password did not match';
 					// Not logged in
 					return false;
 				}
 			} else {
+				echo 'Database returned invalid number of rows';
 				// Not logged in
 				return false;
 			}
 		} else {
+			echo 'Database returned null';
 			// Not logged in
 			return false;
 		}
 	} else {
-		echo 'not logged in';
+		echo 'SESSION vars not set';
 		// Not logged in
 		return false;
 	}

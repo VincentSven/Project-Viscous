@@ -1,7 +1,9 @@
 <?php
-include_once '/php/login/register.inc.php';
-include_once '/php/config.php';
-include_once '/php/basic_func.php';
+	include_once '/php/login/register.inc.php';
+	include_once '/php/config.php';
+	include_once '/php/basic_func.php';
+	include_once 'php/login/db_connect.php';
+	sec_session_start();
 ?>
 <!DOCTYPE html>
 <html>
