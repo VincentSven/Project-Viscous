@@ -1,14 +1,10 @@
 <?php
 	//This is the config file
 	
-	//site status variables
+	//TECHNICAL SETTINGS
 	$maintenance 				= FALSE;
 	
-	//site definition variables
-	$pretitle 					= 'Sola';
-	$seperator 					= ' - ';
-	$posttitle 					= 'Lands';
-	$title 						= $pretitle . $seperator . $posttitle;
+
 	
 	//Database variables
 	$dbserver					= 'localhost';
@@ -17,13 +13,24 @@
 	$db							= 'solalands';
 
 	//DATABASE CONNECTION
-	$conn						= new mysqli($dbserver, $dbusername, $dbpassword);
+	$conn						= new mysqli($dbserver, $dbusername, $dbpassword, $db);
 	
 	//DATABASE CONNECTION CHECK
 	if ($conn->connect_error){
 		die('Database connection lost!' . $conn->connect_error);
 	}else{
-		echo 'Succesvol geconnect!';
+		$query = 'SELECT name, seperator, discription, maintenance FROM configuration';
+		$result = mysqli_query($conn, $query);
+		$row = mysqli_fetch_assoc($result);
+		
+		//site definition variables
+		$pretitle 					= $row['name'];
+		$seperator 					= $row['seperator'];
+		$posttitle 					= $row['discription'];
+		$title 						= $pretitle . $seperator . $posttitle;
+		
+		//TECHNICAL SETTINGS
+		$maintenance 				= $row['maintenance'];
 	};
 
 ?>
