@@ -1,17 +1,21 @@
 <?php
-	include_once 'config/config.php';
-	include_once 'Functions/basic_func.php';
-
-if ($maintenance == TRUE){
-	echo 'Deze website is bezig met wat verbouwingen, kom later terug';
-} elseif ($maintenance == FALSE) {
+	include 'config/config.php';
+	include 'Functions/basic_func.php';
+	if ($maintenance == TRUE){
+		echo 'Deze website is bezig met wat verbouwingen, kom later terug';
+	} elseif ($maintenance == FALSE) {
 ?>
+
 <html>
 	<head>
 		<link href="styles/divstyle.css" type="text/css" rel="stylesheet"/>
 		<link href="styles/stylesheet.css" type="text/css" rel="stylesheet"/>
 		<link href="styles/navbar.css" type="text/css" rel="stylesheet"/>
 		<title><?php echo $title;?></title>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="game/main.js" type="text/javascript"></script>
+		<script src="game/keyboard.js" type="text/javascript"></script>
+		<script src="game/util.js"></script>
 	</head>
 	<body>
 		<div id="wrapper">
@@ -34,14 +38,10 @@ if ($maintenance == TRUE){
 				</div>
 			</div>
 			<div id="content">
-				<div id="content_left">
-					<p>Dit is een gloedhemeltjenieuwe site! Wat is het?
-						Nu nog niks. Wat word het? Een cool gameplatform!
-						(hopen we) Wat heb ik eraan? Geen idee, maar het is zo uniek dat we een site MOESTEN maken.
-						dus....</p>
-				</div>
-				<div id="update_posts">
-					<p>Hier alle updates graag! Kan iemand er een update register even in PHP'en? Danku!</p>
+				<div id="canvas_wrapper">
+					<canvas id="canvas" width="720" height="600">
+					
+					</canvas>
 				</div>
 			</div>
 		</div>
@@ -53,5 +53,5 @@ if ($maintenance == TRUE){
 	</body>
 </html>
 <?php
-}
+	}
 ?>

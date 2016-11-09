@@ -68,3 +68,7 @@
 	color: white;
 	margin: .5% 0px .5% 0px;
 }
+
+#canvas_wrapper{
+	text-align: center;
+}
