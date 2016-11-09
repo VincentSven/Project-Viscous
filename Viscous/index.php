@@ -1,7 +1,6 @@
 <?php
-	include_once 'php/config.php';
-	include_once 'php/basic_func.php';
-	include_once 'php/login/db_connect.php';
+	include 'config/config.php';
+	include 'Functions/basic_func.php';
 
 if ($maintenance == TRUE){
 	echo 'Deze website is bezig met wat verbouwingen, kom later terug';
@@ -26,27 +25,15 @@ if ($maintenance == TRUE){
 					<nav>
 						<ul>
 							<li><a href="index.php">Home</a></li>
+							<li><a href="#">Inloggen</a></li>
 							<li><a href="#">Info</a></li>
 							<li><a href="#">Forum</a></li>
 							<li><a href="#">Spelregels</a></li>
-							<?php
-								sec_session_start(); 
-								if(login_check($mysqli)){
-							?>
-								<li>Logged in</li>
-							<?php }else{ ?>
-								<li><a href="login.php">Inloggen</a></li>
-							<?php } ?>
 						</ul>
 					</nav>
 				</div>
 			</div>
 			<div id="content">
-				<?php
-        		if (isset($_GET['error'])) {
-        		    echo '<p class="error">Error Logging In!</p>';
-        		}
-       			 ?> 
 				<div id="content_left">
 					<p>Dit is een gloedhemeltjenieuwe site! Wat is het?
 						Nu nog niks. Wat word het? Een cool gameplatform!
