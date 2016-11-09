@@ -25,7 +25,7 @@ if ($maintenance == TRUE){
 					<nav>
 						<ul>
 							<li><a href="index.php">Home</a></li>
-							<li><a href="login.php">Inloggen</a></li>
+							<li><a href="l">Inloggen</a></li>
 							<li><a href="#">Info</a></li>
 							<li><a href="#">Forum</a></li>
 							<li><a href="#">Spelregels</a></li>
@@ -35,13 +35,10 @@ if ($maintenance == TRUE){
 			</div>
 			<div id="content">
 				<div id="content_left">
-					<p>Dit is een gloedhemeltjenieuwe site! Wat is het?
-						Nu nog niks. Wat word het? Een cool gameplatform!
-						(hopen we) Wat heb ik eraan? Geen idee, maar het is zo uniek dat we een site MOESTEN maken.
-						dus....</p>
+					<p>Content links</p>
 				</div>
 				<div id="update_posts">
-					<p>Hier alle updates graag! Kan iemand er een update register even in PHP'en? Danku!</p>
+					<p>Content Rechts (makkelijk toch?)</p>
 				</div>
 			</div>
 		</div>

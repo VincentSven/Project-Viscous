@@ -34,14 +34,17 @@ if ($maintenance == TRUE){
 				</div>
 			</div>
 			<div id="content">
-				<div id="content_left">
-					<p>Dit is een gloedhemeltjenieuwe site! Wat is het?
-						Nu nog niks. Wat word het? Een cool gameplatform!
-						(hopen we) Wat heb ik eraan? Geen idee, maar het is zo uniek dat we een site MOESTEN maken.
-						dus....</p>
-				</div>
-				<div id="update_posts">
-					<p>Hier alle updates graag! Kan iemand er een update register even in PHP'en? Danku!</p>
+				<div id="form">
+					<form action="home.php" method="post">
+						<fieldset>
+							<legend> Gegevens Graag! </legend>
+								Gebruikersnaam:<br />
+								<input type="text" name="firstname"  /><br />
+								Wachtwoord:<br />
+								<input type="password" name="passw"  /><br />
+								<input type="submit" value="login"   />
+							</fieldset>
+					</form>
 				</div>
 			</div>
 		</div>
