@@ -12,11 +12,10 @@
 		<link href="styles/stylesheet.css" type="text/css" rel="stylesheet"/>
 		<link href="styles/navbar.css" type="text/css" rel="stylesheet"/>
 		<title><?php echo $title;?></title>
-		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script type="text/javascript" src="game/main.js" ></script>
-		<script type="text/javascript" src="game/keyboard.js"></script>
-		<script type="text/javascript" src="game/util.js"></script>
-		<script type="text/javascript" src="game/world.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="game/main.js" type="text/javascript"></script>
+		<script src="game/keyboard.js" type="text/javascript"></script>
+		<script src="game/util.js"></script>
 	</head>
 	<body>
 		<div id="wrapper">

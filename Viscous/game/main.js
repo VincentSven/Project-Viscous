@@ -21,8 +21,6 @@ $(document).ready(function() {
 
 	disableScrollbars();
 
-	setupRenderer();
-
 	Game.lastTick = performance.now();
 	Game.lastRender = Game.lastTick;
 	Game.tickLength = 50;
@@ -65,5 +63,5 @@ function update(time) {
 }
 
 function render(tFrame) {
-	render_world();
+	
 }
