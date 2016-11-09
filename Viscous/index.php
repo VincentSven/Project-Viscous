@@ -1,6 +1,6 @@
 <?php
-	include_once 'config/config.php';
-	include_once 'Functions/basic_func.php';
+	include 'config/config.php';
+	include 'Functions/basic_func.php';
 
 if ($maintenance == TRUE){
 	echo 'Deze website is bezig met wat verbouwingen, kom later terug';
@@ -25,10 +25,10 @@ if ($maintenance == TRUE){
 					<nav>
 						<ul>
 							<li><a href="index.php">Home</a></li>
+							<li><a href="#">Inloggen</a></li>
 							<li><a href="#">Info</a></li>
 							<li><a href="#">Forum</a></li>
-							<li><a href="game.php">Spel</a></li>
-							<li><a href="#">Inloggen</a></li>
+							<li><a href="#">Spelregels</a></li>
 						</ul>
 					</nav>
 				</div>
