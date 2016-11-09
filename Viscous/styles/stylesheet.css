@@ -25,6 +25,12 @@ html {
 	background-size: 100%;
 }
 
+canvas {
+	border: 1px solid gray;
+	width: 70%;
+	height: 70%;
+}
+
 .spacer {
 	margin: 0;
 	padding: 0;
