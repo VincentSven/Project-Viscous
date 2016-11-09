@@ -1,7 +1,3 @@
-<?php
-	include_once 'php/login/db_connect.php';
-	sec_session_start();
-?>
 <html>
 	<head>
 		<title>Login page</title>

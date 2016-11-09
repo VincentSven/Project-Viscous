@@ -3,11 +3,9 @@
 	include_once 'php/basic_func.php';
 	include_once 'php/login/db_connect.php';
 
-	if ($maintenance == TRUE){
-		echo 'Deze website is bezig met wat verbouwingen, kom later terug';
-	} elseif ($maintenance == FALSE) {
-		
-	sec_session_start(); 
+if ($maintenance == TRUE){
+	echo 'Deze website is bezig met wat verbouwingen, kom later terug';
+} elseif ($maintenance == FALSE) {
 ?>
 <html>
 	<head>
@@ -31,7 +29,10 @@
 							<li><a href="#">Info</a></li>
 							<li><a href="#">Forum</a></li>
 							<li><a href="#">Spelregels</a></li>
-							<?php if(login_check($mysqli)){ ?>
+							<?php
+								sec_session_start(); 
+								if(login_check($mysqli)){
+							?>
 								<li>Logged in</li>
 							<?php }else{ ?>
 								<li><a href="login.php">Inloggen</a></li>
@@ -41,6 +42,11 @@
 				</div>
 			</div>
 			<div id="content">
+				<?php
+        		if (isset($_GET['error'])) {
+        		    echo '<p class="error">Error Logging In!</p>';
+        		}
+       			 ?> 
 				<div id="content_left">
 					<p>Dit is een gloedhemeltjenieuwe site! Wat is het?
 						Nu nog niks. Wat word het? Een cool gameplatform!
