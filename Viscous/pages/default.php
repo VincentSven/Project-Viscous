@@ -24,8 +24,8 @@ if ($maintenance == TRUE){
 				<div id="menu">
 					<nav>
 						<ul>
-							<li><a href="index.php">Home</a></li>
-							<li><a href="l">Inloggen</a></li>
+							<li><a href="index.php?page=index">Home</a></li>
+							<li><a href="index.php?page=login">Inloggen</a></li>
 							<li><a href="#">Info</a></li>
 							<li><a href="#">Forum</a></li>
 							<li><a href="#">Spelregels</a></li>

@@ -1,10 +1,5 @@
 <?php
-	include 'config/config.php';
-	include 'Functions/basic_func.php';
-
-if ($maintenance == TRUE){
-	echo 'Deze website is bezig met wat verbouwingen, kom later terug';
-} elseif ($maintenance == FALSE) {
+	global $title;
 ?>
 <html>
 	<head>
@@ -24,8 +19,8 @@ if ($maintenance == TRUE){
 				<div id="menu">
 					<nav>
 						<ul>
-							<li><a href="index.php">Home</a></li>
-							<li><a href="login.php">Inloggen</a></li>
+							<li><a href="index.php?page=index">Home</a></li>
+							<li><a href="index.php?page=login">Inloggen</a></li>
 							<li><a href="#">Info</a></li>
 							<li><a href="#">Forum</a></li>
 							<li><a href="#">Spelregels</a></li>
@@ -55,6 +50,3 @@ if ($maintenance == TRUE){
 		</div>
 	</body>
 </html>
-<?php
-}
-?>
