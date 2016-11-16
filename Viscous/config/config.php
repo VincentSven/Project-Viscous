@@ -19,18 +19,18 @@
 	if ($conn->connect_error){
 		die('Database connection lost!' . $conn->connect_error);
 	}else{
-		$query = 'SELECT name, seperator, discription, maintenance FROM configuration';
+		$query = 'SELECT _name, _separator, _description, _maintenance FROM configuration';
 		$result = mysqli_query($conn, $query);
 		$row = mysqli_fetch_assoc($result);
 		
 		//site definition variables
-		$pretitle 					= $row['name'];
-		$seperator 					= $row['seperator'];
-		$posttitle 					= $row['discription'];
+		$pretitle 					= $row['_name'];
+		$seperator 					= $row['_separator'];
+		$posttitle 					= $row['_description'];
 		$title 						= $pretitle . $seperator . $posttitle;
 		
 		//TECHNICAL SETTINGS
-		$maintenance 				= $row['maintenance'];
+		$maintenance 				= $row['_maintenance'];
 	};
 
 ?>
