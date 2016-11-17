@@ -1,7 +1,7 @@
 <?php
 	global $title;	
 ?>
-<html>
+<html lang="nederlands">
 	<head>
 		<link href="styles/divstyle.css" type="text/css" rel="stylesheet"/>
 		<link href="styles/stylesheet.css" type="text/css" rel="stylesheet"/>
@@ -14,7 +14,8 @@
 			</div>
 			<div id="top">
 				<div id="header">
-					<h1>Sola lands</h1>
+					<img src="img/Sola logo.png" / class="logo">
+					<h1><?php echo $title;?></h1>
 				</div>
 				<div id="menu">
 					<nav>
