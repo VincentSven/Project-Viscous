@@ -7,10 +7,10 @@
 
 	
 	//Database variables
-	$dbserver					= 'localhost';
-	$dbusername					= 'root';
-	$dbpassword					= '';
-	$db							= 'solalands';
+	$dbserver					= "localhost";
+	$dbusername					= "root";
+	$dbpassword					= "";
+	$db							= "solalands";
 
 	//DATABASE CONNECTION
 	$conn						= new mysqli($dbserver, $dbusername, $dbpassword, $db);
@@ -19,18 +19,18 @@
 	if ($conn->connect_error){
 		die('Database connection lost!' . $conn->connect_error);
 	}else{
-		$query = 'SELECT _name, _separator, _description, _maintenance FROM configuration';
+		$query = "SELECT `name`, `separator`, `discription`, `maintenance` FROM configuration";
 		$result = mysqli_query($conn, $query);
 		$row = mysqli_fetch_assoc($result);
 		
 		//site definition variables
-		$pretitle 					= $row['_name'];
-		$seperator 					= $row['_separator'];
-		$posttitle 					= $row['_description'];
+		$pretitle 					= $row['name'];
+		$seperator 					= $row['separator'];
+		$posttitle 					= $row['discription'];
 		$title 						= $pretitle . $seperator . $posttitle;
 		
 		//TECHNICAL SETTINGS
-		$maintenance 				= $row['_maintenance'];
+		$maintenance 				= $row['maintenance'];
 	};
 
 ?>
