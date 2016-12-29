@@ -1,0 +1,32 @@
+.header {
+	border-style: solid;
+	border-color: #000000;
+	padding: .5%;
+	overflow: hidden;
+}
+
+.logo {
+	float: left;
+	margin: .2%;
+}
+
+.header_text {
+	float: left;
+	margin: .5%;
+}
+
+.footer {
+	background-color: #00FF57;
+	border-color: #00FF57;
+	border-top: blue; 
+	border-width: .2em;
+	border-style: solid;
+	height: 3%;
+	padding: .8%;
+}
+
+.toe {
+	font-style:	italic;
+	width: 80%;
+	margin: 0 auto;
+}

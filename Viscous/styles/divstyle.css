@@ -2,7 +2,7 @@
 	width: 80%;
 	margin: 0 auto;
 	min-height: 100%;
-	margin-bottom: -2.4em;
+	margin-bottom: -4.3%;
 }
 
 #wrapper:after {
@@ -14,12 +14,7 @@
 	background-color: #BD0808;
 }
 
-#header {
-	border-style: solid;
-	border-color: #000000;
-	padding: .2%;
-	height: 10%;
-}
+
 
 #menu {
 	margin: .5% 0 .5% 0;
@@ -58,20 +53,7 @@
 	border-color: rgba(255, 0, 0, 0.5);
 }
 
-#footer {
-	background-color: #00FF57;
-	border-color: #00FF57;
-	border-top: blue; 
-	border-width: .2em;
-	border-style: solid;
-	height: 2em;
-}
 
-#toe {
-	font-style:	italic;
-	width: 80%;
-	margin: 0 auto;
-}
 
 #toe p{
 	color: white;
