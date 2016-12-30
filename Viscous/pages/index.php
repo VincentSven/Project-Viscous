@@ -1,5 +1,6 @@
 <?php
 	global $title;	
+	global $logo;
 ?>
 <html lang="ned">
 	<head>

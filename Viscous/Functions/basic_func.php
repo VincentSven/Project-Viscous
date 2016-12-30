@@ -14,6 +14,9 @@
 			if ($page == 'login') {
 				require_once 'pages/login.php';
 			}
+			if ($page == 'registration') {
+				require_once 'pages/registration.php';
+			}
 		} 
 		
 		else {

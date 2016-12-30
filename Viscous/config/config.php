@@ -19,7 +19,7 @@
 	if ($conn->connect_error){
 		die('Database connection lost!' . $conn->connect_error);
 	}else{
-		$query = "SELECT `name`, `separator`, `discription`, `maintenance` FROM configuration";
+		$query = "SELECT `name`, `separator`, `discription`, `maintenance`, logo FROM configuration";
 		$result = mysqli_query($conn, $query);
 		$row = mysqli_fetch_assoc($result);
 		
@@ -28,6 +28,7 @@
 		$seperator 					= $row['separator'];
 		$posttitle 					= $row['discription'];
 		$title 						= $pretitle . $seperator . $posttitle;
+		$logo						= $row['logo'];
 		
 		//TECHNICAL SETTINGS
 		$maintenance 				= $row['maintenance'];
