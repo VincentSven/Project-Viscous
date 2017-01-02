@@ -9,18 +9,18 @@
 			$page = $_GET['page'];
 			
 			if ($page == 'index') {
-				require_once 'pages/index.php';
+				require_once 'Frontend/pages/index.php';
 			}
 			if ($page == 'login') {
-				require_once 'pages/login.php';
+				require_once 'Frontend/pages/login.php';
 			}
 			if ($page == 'registration') {
-				require_once 'pages/registration.php';
+				require_once 'Frontend/pages/registration.php';
 			}
 		} 
 		
 		else {
-			require_once 'pages/index.php';
+			require_once 'Frontend/pages/index.php';
 		}
 	}
 ?>

@@ -14,13 +14,13 @@
 		<div id="wrapper">
 			<div class="spacer">
 			</div>
-			<?php require_once 'templates/header.php'; ?>
+			<?php require_once 'Frontend/templates/header.php'; ?>
 			<div id="content">
 				<div class="content_left">
 					<p>Content links</p>
 				</div>
 				<div class="content_right">
-					<form role="form" accept-charset="utf-8" action="home.php" method="post">
+					<form role="form" accept-charset="utf-8" action="backend/client-registration.php" method="post">
 						<fieldset>
 							<legend> Gegevens Graag! </legend>
 								<div class="mail"/>
@@ -41,6 +41,6 @@
 				</div>
 			</div>
 		</div>
-		<?php require_once 'templates/footer.php'; ?>
+		<?php require_once 'Frontend/templates/footer.php'; ?>
 	</body>
 </html>

@@ -1,7 +1,7 @@
 <?php
 
-	include 'Functions/basic_func.php';
-	include 'config/config.php';
+	include 'system/basic_func.php';
+	include 'system/config.php';
 	
 	if ($maintenance == TRUE){
 		

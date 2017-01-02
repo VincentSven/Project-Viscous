@@ -14,7 +14,7 @@
 		<div id="wrapper">
 			<div class="spacer">
 			</div>
-			<?php require_once 'templates/header.php'; ?>
+			<?php require_once 'Frontend/templates/header.php'; ?>
 			<div id="content">
 				<div id="content_left">
 					<p>Content links</p>
@@ -24,6 +24,6 @@
 				</div>
 			</div>
 		</div>
-		<?php require_once 'templates/header.php'; ?>
+		<?php require_once 'Frontend/templates/header.php'; ?>
 	</body>
 </html>

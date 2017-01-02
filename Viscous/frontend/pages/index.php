@@ -13,7 +13,7 @@
 	<body>
 		<div id="wrapper">
 			<div class="spacer"></div>
-			<?php require_once('templates/header.php') ;?>
+			<?php require_once('Frontend/templates/header.php') ;?>
 			<div id="content">
 				<div class="content_left">
 					<p>Dit is een gloedhemeltjenieuwe site! Wat is het?
@@ -27,6 +27,6 @@
 				</div>
 			</div>
 		</div>
-		<?php require_once('templates/footer.php') ;?>
+		<?php require_once('Frontend/templates/footer.php') ;?>
 	</body>
 </html>

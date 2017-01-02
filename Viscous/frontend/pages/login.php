@@ -14,7 +14,7 @@
 		<div id="wrapper">
 			<div class="spacer">
 			</div>
-			<?php require_once('templates/header.php') ;?>
+			<?php require_once('Frontend/templates/header.php') ;?>
 			<div id="content">
 				<div class="form">
 					<form role="form" accept-charset="utf-8" action="home.php" method="post">
@@ -30,6 +30,6 @@
 				</div>
 			</div>
 		</div>
-		<?php require_once('templates/footer.php') ;?>
+		<?php require_once('Frontend/templates/footer.php') ;?>
 	</body>
 </html>
