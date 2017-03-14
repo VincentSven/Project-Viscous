@@ -1,0 +1,53 @@
+.header {
+	border-style: solid;
+	border-color: #000000;
+	padding: .5%;
+	overflow: hidden;
+}
+.logo {
+	float: left;
+	margin: .2%;
+}
+.header_text {
+	float: left;
+	margin: .5%;
+}
+.content_left {
+	margin: 0 1% 0 0;
+	float: left;
+	background-color: rgba(255, 0, 0, 0.5);
+	width: 34%;
+	padding: .5%;
+	border-color: #000000;
+	border-style: solid;
+}
+.content_right {
+	margin: 0;
+	float: left;
+	background-color: rgba(255, 0, 0, 0.5);
+	width: 62%;
+	padding: .5%;
+	border-color: #000000;
+	border-style: solid;
+}
+.footer {
+	background-color: #00FF57;
+	border-color: #00FF57;
+	border-top: blue; 
+	border-width: .2em;
+	border-style: solid;
+	height: 3%;
+	padding: .8%;
+}
+.toe {
+	font-style:	italic;
+	width: 80%;
+	margin: 0 auto;
+}
+.form {
+	width: 30%;
+	margin: 0% auto;
+	background: rgba(255, 0, 0, 0.5);
+	border-style: solid;
+	border-color: rgba(255, 0, 0, 0.5);
+}
