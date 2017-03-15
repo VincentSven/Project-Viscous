@@ -1,5 +1,7 @@
 <?php
 	
+	session_start();
+	
 	//Database variables
 	$dbserver					= "localhost";
 	$dbusername					= "root";
@@ -31,11 +33,13 @@
 	
 	if ($rowcount_uname >= 1) 
 	{
-		echo 'welcome to gfazeclan mata3e';
+		echo 'welcome to gfazeclan mata3e </br>'; 
+		$_SESSION['loggedin'] = $username;
 	}
 	else
 	{
 		echo 'No account matw';
 	}
 	
+	echo $_SESSION['loggedin'];
 ?>

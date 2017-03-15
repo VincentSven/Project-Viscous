@@ -17,6 +17,10 @@
 			if ($page == 'registration') {
 				require_once 'Frontend/pages/registration.php';
 			}
+			if ($page == 'log_out') {
+				session_destroy();
+				echo 'logged out';
+			}
 		} 
 		
 		else {

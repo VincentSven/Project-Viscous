@@ -1,5 +1,5 @@
 <?php
-
+	session_start();
 	include 'system/basic_func.php';
 	include 'system/config.php';
 	
