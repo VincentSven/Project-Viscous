@@ -17,13 +17,13 @@
 			<?php require_once('Frontend/templates/header.php') ;?>
 			<div id="content">
 				<div class="form">
-					<form role="form" accept-charset="utf-8" action="home.php" method="post">
+					<form role="form" accept-charset="utf-8" action="backend/login-handler.php" method="post">
 						<fieldset>
 							<legend> Gegevens Graag! </legend>
 								Gebruikersnaam:<br />
-								<input type="text" name="firstname"  /><br />
+								<input type="text" name="username"  required/><br />
 								Wachtwoord:<br />
-								<input type="password" name="passw"  /><br />
+								<input type="password" name="passw"  required/><br />
 								<input type="submit" value="login"   />
 							</fieldset>
 					</form>
