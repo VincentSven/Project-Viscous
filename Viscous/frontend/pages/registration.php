@@ -11,10 +11,9 @@
 		<title><?php echo $title;?></title>
 	</head>
 	<body>
+	<?php require_once('Frontend/templates/header.php') ;?>
 		<div id="wrapper">
-			<div class="spacer">
-			</div>
-			<?php require_once 'Frontend/templates/header.php'; ?>
+			<div class="spacer"></div>
 			<div id="content">
 				<div class="content_left">
 					<p>Content links</p>

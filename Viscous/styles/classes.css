@@ -1,16 +1,27 @@
 .header {
-	border-style: solid;
-	border-color: #000000;
-	padding: .5%;
 	overflow: hidden;
+	width: 80%;
+	margin:0 auto;
 }
+.head_left{
+	width: 20%;
+    overflow: hidden;
+    float: left;
+}
+
+.head_right{
+	width: 80%;	
+    overflow: hidden;
+    float: right;
+}
+
 .logo {
-	float: left;
-	margin: .2%;
+    float: left;
+    margin: 1% 1% 0 1%;
 }
 .header_text {
-	float: left;
-	margin: .5%;
+    float: left;
+    padding: 3.8%;
 }
 .content_left {
 	margin: 0 1% 0 0;
@@ -31,13 +42,9 @@
 	border-style: solid;
 }
 .footer {
-	background-color: #00FF57;
-	border-color: #00FF57;
-	border-top: blue; 
-	border-width: .2em;
-	border-style: solid;
+	background: #e7e7e7;
 	height: 3%;
-	padding: .8%;
+	padding: 1%;
 }
 .toe {
 	font-style:	italic;

@@ -2,7 +2,7 @@
 	if (isset($_SESSION['loggedin'])){
 ?>
 
-	<div id="menu">
+	<div class="head_right">
 		<nav>
 			<ul>
 				<li><a href="index.php?page=index">Home</a></li>
@@ -19,7 +19,7 @@
 	else{
 ?>
 
-	<div id="menu">
+	<div class="head_right">
 		<nav>
 			<ul>
 				<li><a href="index.php?page=index">Home</a></li>

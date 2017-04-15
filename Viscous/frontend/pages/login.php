@@ -11,10 +11,9 @@
 		<title><?php echo $title;?></title>
 	</head>
 	<body>
+	<?php require_once('Frontend/templates/header.php') ;?>
 		<div id="wrapper">
-			<div class="spacer">
-			</div>
-			<?php require_once('Frontend/templates/header.php') ;?>
+			<div class="spacer"></div>
 			<div id="content">
 				<div class="form">
 					<form role="form" accept-charset="utf-8" action="backend/login-handler.php" method="post">
