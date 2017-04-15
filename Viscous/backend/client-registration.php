@@ -13,6 +13,10 @@
 		die('Database connection lost!' . $conn->connect_error);
 	}
 	
+	//PREPARING STATEMENTS
+	$stmt_ins = $conn->prepare("INSERT INTO users (username, password, email) VALUES (?, ?, ?)");
+	$stmt_ins->bind_param("sss", $username, $password, $email);
+	
 	
 	//ALLOCATIONS
 	$mail		=	$_POST['mail'];
@@ -46,17 +50,15 @@
 	}
 	else
 	{
-			//INSERT INTO DB
-			$sql	=	"INSERT INTO users (username, password, email)
-			VALUES ('$username', '$password', '$mail')";
 			
 			//EXECUTE QUERY
-			if ($conn -> query($sql)	===	TRUE) {
+			if ($stmt_ins->execute()	===	TRUE) {
 				echo 'Account succesvol toegevoegd aan de database!';
 			} else {
-				echo 'ERROR'.$sql.'</br>'.$conn->error;
+				echo 'ERROR'.$stmt_ins.'</br>'.$conn->error;
 			}
 	}
 	
-	
+	$stmt_ins->close();
+	$conn->close();
 ?>
