@@ -61,6 +61,9 @@
 			//EXECUTE QUERY
 			if ($stmt_ins->execute()	===	TRUE) {
 				echo 'Account succesvol toegevoegd aan de database!';
+				
+				header("Location: ../index.php");
+				die();
 			} else {
 				echo 'ERROR'.$stmt_ins.'</br>'.$conn->error;
 			}

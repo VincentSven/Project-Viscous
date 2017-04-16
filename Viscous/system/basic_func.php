@@ -20,6 +20,9 @@
 			if ($page == 'log_out') {
 				session_destroy();
 				echo 'logged out';
+				
+				header("Location: index.php");
+				die();
 			}
 		} 
 		

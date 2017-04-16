@@ -38,6 +38,9 @@
 	{
 		echo 'welcome to gfazeclan mata3e </br>'; 
 		$_SESSION['loggedin'] = $username;
+		
+		header("Location: ../index.php");
+		die();
 	}
 	else
 	{
