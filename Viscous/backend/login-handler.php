@@ -25,8 +25,11 @@
 	$password = md5($passw);
 	
 	//CHECK UNIQUENESS OF THA VALUES
-	$sql_uname 	= "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
-	if ($result=mysqli_query($conn,$sql_uname)) 
+	$stmt = $conn->prepare("SELECT * FROM users WHERE username = ? AND password = ?");
+	$stmt->bind_param("ss", $username, $password);
+	$stmt->execute();
+	$stmt->store_result();
+	if ($result= $stmt) 
 	{
 		$rowcount_uname = $result->num_rows;
 	}
@@ -40,6 +43,4 @@
 	{
 		echo 'No account matw';
 	}
-	
-	echo $_SESSION['loggedin'];
 ?>
