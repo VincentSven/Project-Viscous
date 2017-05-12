@@ -1,5 +1,5 @@
 <div id="top">
-	<div class="header"/>
+	<div id="header"/>
 		<div class="head_left"/>
 			<div class="logo"> 
 				<a href="index.php?page=index"><img src="img/<?php echo $logo ; ?>"/></a>

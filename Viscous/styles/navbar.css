@@ -14,9 +14,8 @@ nav ul:after {
 nav ul li{
 	float: left;
     width: 19%;
-    height: 65%;
     overflow: hidden;
-    padding: 1% 0;
+    padding: 15px 0;
 }
 
 nav ul li a{
@@ -35,6 +34,7 @@ nav ul li:hover {
     background: -o-linear-gradient(white, #a8a8a8); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(white, #a8a8a8); /* For Firefox 3.6 to 15 */
     background: linear-gradient(white, #a8a8a8); /* Standard syntax */
+	height: 105%;
 }
 
 nav ul li:hover > ul {

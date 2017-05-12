@@ -1,7 +1,13 @@
 #wrapper {
-	width: 80%;
-	margin: 0 auto -3.53% auto;
-	height: 94%;
+    width: 1200px;
+    margin: 0 auto -2.83% auto;
+    height: 93%;
+}
+
+#header {
+	overflow: hidden;
+	width: 1200px;
+	margin:0 auto;
 }
 
 #wrapper:after {
@@ -12,10 +18,10 @@
 #top {
 	height: 60px;
     background: white; 
-    background: -webkit-linear-gradient(white, gray); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(white, gray); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(white, gray); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(white, gray); /* Standard syntax */
+    background: -webkit-linear-gradient(white, #d3d3d3);
+    background: -o-linear-gradient(white, #d3d3d3);
+    background: -moz-linear-gradient(white, #d3d3d3);
+    background: linear-gradient(white, #d3d3d3);
 }
 
 #menu {
