@@ -39,11 +39,14 @@
 		echo 'welcome to gfazeclan mata3e </br>'; 
 		$_SESSION['loggedin'] = $username;
 		
-		header("Location: ../index.php");
+		header("Location: ../index.php?msg=loginsuccess");
 		die();
 	}
 	else
 	{
 		echo 'No account matw';
+		
+		header("Location: ../index.php?page=login&err=noacc");
+		die();
 	}
 ?>

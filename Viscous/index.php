@@ -1,13 +1,13 @@
 <?php
 	session_start();
-	include 'system/basic_func.php';
-	include 'system/config.php';
+
+	require_once('system/include.php'); 
 	
-	if ($maintenance == TRUE){
+	if ($maintenance == 1){
 		
 		echo 'Deze website is bezig met wat verbouwingen, kom later terug';
 		
-	} elseif ($maintenance == FALSE) {
+	} elseif ($maintenance == 0) {
 		
 		getPage();
 		

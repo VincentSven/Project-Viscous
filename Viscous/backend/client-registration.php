@@ -1,4 +1,7 @@
 <?php
+
+	session_start();
+	
 	//Database variables
 	$dbserver					= "localhost";
 	$dbusername					= "root";
@@ -49,11 +52,15 @@
 	
 	if ($rowcount_uname >= 1) 
 	{
-		echo 'Dit accountnaam is al in gebruik.';
+		echo 'Deze gebruikersnaam is al in gebruikersnaam is al in gebruikersnaam is al in gerbuik.';
+		header("Location: ../index.php?page=registration&err=uname");
+		die();
 	}
 	elseif($rowcount_mail >= 1)
 	{
-		echo 'Deze E-mail is al in gebruik.';		
+		echo 'Deze E-mail is al in gebruik.';
+		header("Location: ../index.php?page=registration&err=mail");
+		die();
 	}
 	else
 	{
@@ -61,8 +68,9 @@
 			//EXECUTE QUERY
 			if ($stmt_ins->execute()	===	TRUE) {
 				echo 'Account succesvol toegevoegd aan de database!';
+				$_SESSION['loggedin'] = $username;
 				
-				header("Location: ../index.php");
+				header("Location: ../index.php?msg=registersuccess");
 				die();
 			} else {
 				echo 'ERROR'.$stmt_ins.'</br>'.$conn->error;

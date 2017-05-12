@@ -4,18 +4,17 @@
 ?>
 <html>
 	<head>
-		<link href="styles/divstyle.css" type="text/css" rel="stylesheet"/>
-		<link href="styles/stylesheet.css" type="text/css" rel="stylesheet"/>
-		<link href="styles/navbar.css" type="text/css" rel="stylesheet"/>
-		<link href="styles/classes.css" type="text/css" rel="stylesheet"/>
-		<title><?php echo $title;?></title>
+		<?php require_once('Frontend/templates/head.php');?>
 	</head>
 	<body>
 	<?php require_once('Frontend/templates/header.php') ;?>
 		<div id="wrapper">
 			<div class="spacer"></div>
 			<div id="content">
-				<div class="form">
+				<div class="content_left">
+					<?php getError();?>
+				</div>
+				<div class="content_right">
 					<form role="form" accept-charset="utf-8" action="backend/login-handler.php" method="post">
 						<fieldset>
 							<legend> Gegevens Graag! </legend>

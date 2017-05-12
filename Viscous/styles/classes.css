@@ -17,8 +17,9 @@
 
 .logo {
     float: left;
-    margin: 1% 1% 0 1%;
+    margin: 2% 1% 0 1%;
 }
+
 .header_text {
     float: left;
     padding: 3.8%;
@@ -57,4 +58,16 @@
 	background: rgba(255, 0, 0, 0.5);
 	border-style: solid;
 	border-color: rgba(255, 0, 0, 0.5);
+}
+
+.button {
+	width: 28%;
+    height: 30px;
+	background-color: #04e4f4;
+	color: white;
+	text-align: center;
+}
+
+.button a{
+	text-align: center;
 }

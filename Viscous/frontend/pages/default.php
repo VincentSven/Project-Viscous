@@ -4,11 +4,7 @@
 ?>
 <html>
 	<head>
-		<link href="styles/divstyle.css" type="text/css" rel="stylesheet"/>
-		<link href="styles/stylesheet.css" type="text/css" rel="stylesheet"/>
-		<link href="styles/navbar.css" type="text/css" rel="stylesheet"/>
-		<link href="styles/classes.css" type="text/css" rel="stylesheet"/>
-		<title><?php echo $title;?></title>
+		<?php require_once('Frontend/templates/head.php');?>
 	</head>
 	<body>
 	<?php require_once('Frontend/templates/header.php') ;?>
