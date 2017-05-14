@@ -15,6 +15,7 @@
 		
 		$news = [];
 		
+		//TODO? this relies on the 'msg_index' table to only contain the $max_news latest messages in ascending chronological order
 		$count = mysqli_num_rows($result);
 		for ($i=0; $i < min($count, $max_news); $i++) {
 			$row = mysqli_fetch_assoc($result); 
