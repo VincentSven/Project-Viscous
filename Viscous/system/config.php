@@ -19,7 +19,7 @@
 	if ($conn->connect_error){
 		die('Database connection lost!' . $conn->connect_error);
 	}else{
-		$query = "SELECT `name`, `separator`, `discription`, `maintenance`, logo FROM configuration";
+		$query = "SELECT `name`, `separator`, `discription`, `maintenance`, `logo` FROM configuration";
 		$result = mysqli_query($conn, $query);
 		$row = mysqli_fetch_assoc($result);
 		
