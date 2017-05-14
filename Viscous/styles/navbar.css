@@ -13,9 +13,10 @@ nav ul:after {
 
 nav ul li{
 	float: left;
-    width: 19%;
+    width: 120px;
     overflow: hidden;
     padding: 15px 0;
+    margin: 2px;
 }
 
 nav ul li a{
@@ -39,4 +40,11 @@ nav ul li:hover {
 
 nav ul li:hover > ul {
 	display: block;
+}
+
+@media only screen and (min-width: 1200px) {
+	nav ul li{
+    width: 19%;
+	margin: 0;
+	}	
 }

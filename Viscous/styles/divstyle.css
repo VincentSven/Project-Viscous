@@ -1,6 +1,6 @@
 #wrapper {
-    width: 1200px;
-    margin: 0 auto -2.83% auto;
+    width: 100%;
+    margin: 0 0 -2.83% 0;
     height: 93%;
 }
 
@@ -31,3 +31,10 @@
 	min-height: 40%;
 }
 
+@media only screen and (min-width: 1200px) {
+	#wrapper {
+    width: 1200px;
+    margin: 0 auto -2.83% auto;
+    height: 93%;
+	}			
+}

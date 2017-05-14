@@ -1,4 +1,14 @@
+.header {
+	overflow: hidden;
+	width: 1200px;
+	margin:0 auto;
+	display: none;
+}
 
+.tablet_header{
+	width: 100%;
+	overflow: hidden;
+}
 
 .head_left{
 	width: 20%;
@@ -7,7 +17,7 @@
 }
 
 .head_right{
-	width: 80%;	
+	width: 260px;
     overflow: hidden;
     float: right;
 }
@@ -21,15 +31,17 @@
     float: left;
     padding: 14.5px;
 }
+
 .content_left {
 	margin: 0 1% 0 0;
 	float: left;
 	background-color: rgba(255, 0, 0, 0.5);
-	width: 34%;
+	width: 37%;
 	padding: .5%;
 	border-color: #000000;
 	border-style: solid;
 }
+
 .content_right {
 	margin: 0;
 	float: left;
@@ -44,11 +56,13 @@
     height: 62px;
     padding: 1%;
 }
+
 .toe {
 	font-style:	italic;
-	width: 1200px;
-	margin: 0 auto;
+	width: 98%;
+	margin-left: 2%;
 }
+
 .form {
 	width: 30%;
 	margin: 0% auto;
@@ -67,4 +81,23 @@
 
 .button a{
 	text-align: center;
+}
+
+@media only screen and (min-width: 1200px) {
+	.header{
+		display: block;
+	}
+	
+	.tablet_header{
+		display: none;
+	}
+	
+	.head_right{
+		width: 80%;	
+	}
+	
+	.toe {
+	width: 1200px;
+	margin: 0 auto;
+	}
 }
