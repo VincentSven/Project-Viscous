@@ -19,7 +19,6 @@
 				</div>
 				<div class="content_right">
 					<p>Hier alle updates graag! Kan iemand er een update register even in PHP'en? Danku!</p>
-					<?php getPage();?>
 				</div>
 			</div>
 		</div>
