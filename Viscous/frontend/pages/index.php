@@ -19,6 +19,7 @@
 				</div>
 				<div class="content_right">
 					<!--<p>Hier alle updates graag! Kan iemand er een update register even in PHP'en? Danku!</p>-->
+					<h2>News feed</h2>
 					<?php require_once('system/news.php'); ?>
 				</div>
 			</div>

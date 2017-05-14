@@ -16,6 +16,7 @@
 		$news = [];
 		
 		//TODO? this relies on the 'msg_index' table to only contain the $max_news latest messages in ascending chronological order
+		// Preferably not do this at load time, but use AJAX? to nicely sort everything after the page loaded
 		$count = mysqli_num_rows($result);
 		for ($i=0; $i < min($count, $max_news); $i++) {
 			$row = mysqli_fetch_assoc($result); 
@@ -26,7 +27,6 @@
 			$news[$i] = "<b>" . $msg_row['title'] . "</b><br/><i>" . $msg_row['time'] . "</i><br/>" . $msg_row['text'] . "<br/><br/>"; //TODO styling
 		}
 		
-		echo "<h2>News feed</h2>";
 		for ($i=min($count, $max_news); $i > 0; $i--) { // Reverses order to be descending chronologic
 			echo $news[$i - 1];
 		}
