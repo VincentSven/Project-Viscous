@@ -18,7 +18,8 @@
 					?>
 				</div>
 				<div class="content_right">
-					<p>Hier alle updates graag! Kan iemand er een update register even in PHP'en? Danku!</p>
+					<!--<p>Hier alle updates graag! Kan iemand er een update register even in PHP'en? Danku!</p>-->
+					<?php require_once('system/news.php'); ?>
 				</div>
 			</div>
 		</div>
