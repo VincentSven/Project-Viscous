@@ -4,7 +4,7 @@
 ?>
 <html lang="nl">
 	<head>
-		<?php require_once('Frontend/templates/head.php');?>
+		<?php require_once('frontend/templates/head.php');?>
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script type="text/javascript">
