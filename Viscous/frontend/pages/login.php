@@ -4,10 +4,10 @@
 ?>
 <html>
 	<head>
-		<?php require_once('Frontend/templates/head.php');?>
+		<?php require_once('frontend/templates/head.php');?>
 	</head>
 	<body>
-	<?php require_once('Frontend/templates/header.php') ;?>
+	<?php require_once('frontend/templates/header.php') ;?>
 		<div id="wrapper">
 			<div class="spacer"></div>
 			<div id="content">
@@ -28,6 +28,6 @@
 				</div>
 			</div>
 		</div>
-		<?php require_once('Frontend/templates/footer.php') ;?>
+		<?php require_once('frontend/templates/footer.php') ;?>
 	</body>
 </html>
