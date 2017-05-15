@@ -31,10 +31,29 @@
 	min-height: 40%;
 }
 
+.news_message {
+	margin: 0 0 10px 0;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+}
+
+.news_title {
+	font-weight: bold;
+}
+
+.news_date {
+	font-style: italic;
+}
+
+.news_text {
+	font-style: normal;
+}
+
 @media only screen and (min-width: 1200px) {
 	#wrapper {
-    width: 1200px;
-    margin: 0 auto -2.83% auto;
-    height: 93%;
+    	width: 1200px;
+    	margin: 0 auto -2.83% auto;
+    	height: 93%;
 	}			
 }

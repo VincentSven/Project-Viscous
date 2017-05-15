@@ -60,7 +60,11 @@
 			$text = $msg['text'][0];
 			$date = $msg['date'][0];
 			
-			$text = "{$title}<br/>{$date}<br/>{$text}<br/><br/>";
+			$text = "<div class=\"news_message\">
+				<div class=\"news_title\">{$title}</div>
+				<div class=\"news_date\">{$date}</div>
+				<div class=\"news_text\">{$text}</div>
+				</div>";
 			$total .= $text;
 		}
 		return $total;
