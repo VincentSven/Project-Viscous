@@ -1,7 +1,8 @@
 #wrapper {
     width: 100%;
-    margin: 0 0 -2.83% 0;
-    height: 93%;
+    margin: -60px auto -62px auto;
+    padding-top: 60px;
+    height: 100%;
 }
 
 #header {
@@ -15,7 +16,7 @@
 	display: block;
 }
 
-#top {
+header {
 	height: 60px;
     background: white; 
     background: -webkit-linear-gradient(white, #d3d3d3);
@@ -53,8 +54,5 @@
 @media only screen and (min-width: 1200px) {
 	#wrapper {
 	    width: 1200px;
-	    margin: -60px auto -62px auto;
-	    padding-top: 60px;
-	    height: 100%;
 	}			
 }

@@ -37,13 +37,13 @@
 		<div id="wrapper">
 			<div class="spacer"></div>
 			<div id="content">
-				<div class="content_left" id="content_left">
+				<div class="content_left">
 					<?php 
 						getMsg();
 						getGlink();
 					?>
 				</div>
-				<div class="content_right" id="content_right">
+				<div class="content_right">
 					<!--<p>Hier alle updates graag! Kan iemand er een update register even in PHP'en? Danku!</p>-->
 					<h2>News feed</h2>
 					<div id="newsfeed">

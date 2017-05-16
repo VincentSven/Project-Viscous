@@ -42,6 +42,12 @@ a{
 	display: block;
 }
 
+footer {
+	background: #e7e7e7;
+    height: 62px;
+    padding: 1%;
+}
+
 .spacer {
 	margin: 0;
 	padding: 0;

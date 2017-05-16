@@ -1,4 +1,4 @@
-<div id="top">
+<header>
 	<div class="tablet_header"/>
 		<div class="head_left"/>
 			<div class="logo"> 
@@ -16,4 +16,4 @@
 		</div>
 	<?php require_once('frontend/templates/logged.php');?>
 	</div>
-</div>
+</header>
