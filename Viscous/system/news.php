@@ -73,14 +73,14 @@
 	header('Content-Type: application/json');
 	$result = [];
 	
-	if( !isset($_POST['functionname']) ) { $result['error'] = 'Invalid POST request'; }
+	if( !isset($_POST['functionname']) ) { $result['error'] = 'Invalid POST request: No functionname'; }
 	if( !isset($result['error']) ) {
         switch($_POST['functionname']) {
 			case 'getNews':
 				$result['news'] = getNews();
 				break;
 			default:
-				$result['error'] = 'Invalid POST request';
+				$result['error'] = 'Invalid POST request: invalid functionname';
 				break;
 		}
 	}

@@ -6,11 +6,11 @@
 	<head>
 		<?php require_once('frontend/templates/head.php');?>
 		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="lib/jquery-3.2.1.min.js"></script>
 		<script type="text/javascript">
         	function loadNews() {
            		var newsfeed = document.getElementById("newsfeed");
-           		
+				   		
            		jQuery.ajax({ 
            			type: "POST",
            			url: "system/news.php",
