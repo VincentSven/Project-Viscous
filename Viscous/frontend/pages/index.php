@@ -7,7 +7,7 @@
 		<?php require_once('frontend/templates/head.php');?>
 		
 		<script src="lib/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript">
+		<script type="text/javascript" id="newsscript">
         	function loadNews() {
            		var newsfeed = document.getElementById("newsfeed");
 				   		
@@ -25,6 +25,9 @@
                   		}
            			}
            		});
+           		
+           		var newsscript = document.getElementById("newsscript");
+           		newsscript.remove();
            	}
         	window.onload = loadNews;
        	</script>
