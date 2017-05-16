@@ -11,10 +11,10 @@
 		<div id="wrapper">
 			<div class="spacer"></div>
 			<div id="content">
-				<div class="content_left" id="content_left">
+				<div class="content_left">
 					Content left
 				</div>
-				<div class="content_right" id="content_right">
+				<div class="content_right">
 					Content right
 				</div>
 			</div>
