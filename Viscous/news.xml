@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <news>
-  <message title="Test Message 2" text="Test message 2, posted last" date="2017-05-14 19:40:00"/>
-  <message title="Test Message 1" text="Test message 1, posted first" date="2017-05-14 19:37:00"/>
+  <message title="Test Message 2" date="2017-05-14 19:40:00"><![CDATA[Test message 2,<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/> posted last]]></message>
+  <message title="Test Message 1" date="2017-05-14 19:37:00"><![CDATA[Test message 1, posted first]]></message>
 </news>

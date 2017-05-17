@@ -37,13 +37,11 @@
     			$msg_title->appendChild($dom->createTextNode($msg_row['title']));
     			$msg->appendChild($msg_title);
 				
-				$msg_text = $dom->createAttribute('text');
-				$msg_text->appendChild($dom->createTextNode($msg_row['text']));
-    			$msg->appendChild($msg_text);
-				
 				$msg_date = $dom->createAttribute('date');
 				$msg_date->appendChild($dom->createTextNode($time[$i]));
     			$msg->appendChild($msg_date);
+				
+				$msg->appendChild($dom->createCDATASection($msg_row['text']));
 			}
 	
 	    	$dom->formatOutput = true; // Set to false to save a little bit of space
@@ -57,8 +55,8 @@
 		$total = "";
 		foreach($xml->message as $msg){
 			$title = $msg['title'][0];
-			$text = $msg['text'][0];
 			$date = $msg['date'][0];
+			$text = $msg[0];
 			
 			$text = "<div class=\"news_message\">
 				<div class=\"news_title\">{$title}</div>
