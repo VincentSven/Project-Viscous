@@ -7,6 +7,7 @@
 body {
 	margin: 0;
 	font-size: 100%;
+	overflow: hidden;
 }
 
 p {
@@ -43,6 +44,8 @@ a{
 }
 
 footer {
+	position: absolute;
+	width: 100%;
 	background: #e7e7e7;
     height: 62px;
     padding: 1%;
