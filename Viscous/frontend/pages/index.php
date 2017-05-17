@@ -52,7 +52,6 @@
 						</div>
 					</div>
 				</div>
-				<div class="low_spacer"></div>
 			</div>
 		</div>
 		<?php require_once('frontend/templates/footer.php') ;?>
