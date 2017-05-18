@@ -5,6 +5,7 @@
 }
 
 body {
+	background: url("../img/coin bg.png") repeat;
 	margin: 0;
 	font-size: 100%;
 	overflow: hidden;
@@ -24,12 +25,6 @@ h1, h2 {
 
 html, body {
 	min-height: 100%;
-}
-
-html {
-	background-image: url("../img/Cloudy bg.jpg");
-	background-size: 100%;
-	box-sizing: border-box;
 }
 
 img{
