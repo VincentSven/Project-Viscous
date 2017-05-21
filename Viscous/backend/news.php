@@ -50,7 +50,7 @@
 	}
 
 	function getNews(){
-		$xml = simplexml_load_file('http://localhost/phpwebgame/viscous/news.xml');
+		$xml = simplexml_load_file('../news.xml');
 		
 		$total = "";
 		foreach($xml->message as $msg){

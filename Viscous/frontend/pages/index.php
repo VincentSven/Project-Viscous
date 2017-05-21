@@ -13,7 +13,7 @@
 				   		
            		jQuery.ajax({ 
            			type: "POST",
-           			url: "system/news.php",
+           			url: "backend/news.php",
            			dataType: 'json',
            			data: { functionname: 'getNews' },
            			
