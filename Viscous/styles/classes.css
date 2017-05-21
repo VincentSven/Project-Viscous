@@ -76,6 +76,10 @@
 	text-align: center;
 }
 
+.game_content {
+	text-align: center;
+}
+
 @media only screen and (min-width: 768px) {
     /* For tablet: */
 	.content_left {

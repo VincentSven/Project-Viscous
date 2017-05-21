@@ -19,12 +19,16 @@
 				require_once 'frontend/pages/login.php';
 			}else if ($page == 'registration') {
 				require_once 'frontend/pages/registration.php';
+			}else if($page == "game") {
+				require_once 'frontend/pages/game.php';
 			}else if ($page == 'log_out') {
 				session_destroy();
 				echo 'logged out';
 				
 				header("Location: index.php?msg=logoutsuccess");
 				die();
+			}else{
+				require_once 'frontend/pages/error/404.php';
 			}
 		} else {
 			require_once 'frontend/pages/index.php';
