@@ -5,6 +5,7 @@
 <html>
 	<head>
 		<?php require_once('frontend/templates/head.php');?>
+		<script src="lib/jquery-3.2.1.min.js" type="text/javascript"></script>
 	</head>
 	<body>
 	<?php require_once('frontend/templates/header.php') ;?>
