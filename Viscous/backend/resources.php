@@ -22,6 +22,22 @@
 				}
 				
 				break;
+			case 'image' :
+				if (!isset($_POST['path'])) {
+					$result['error'] = "Invalid POST request";
+					break;
+				}
+				$path = $_POST['path'];
+				if(file_exists("../game/res/{$path}")){
+					$im = file_get_contents("../game/res/{$path}");
+					header("Content-type: image/jpeg");
+					echo $im;
+					return;
+				}else{
+					$result['error'] = "Invalid POST request";
+				}
+				
+				break;
 			default :
 				$result['error'] = "Invalid POST request";
 				break;
