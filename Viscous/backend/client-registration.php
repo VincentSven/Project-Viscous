@@ -28,7 +28,7 @@
 	$passw		=	$_POST['passw'];
 	
 	//ENCRYPT PASSWORD
-	$password = md5($passw);
+	$password = password_hash($passw, PASSWORD_DEFAULT);
 	
 	//TEST FOR HACKING
 	
