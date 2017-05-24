@@ -54,7 +54,7 @@
 			die();	
 		}else{
 			$_SESSION['loggedin'] = $username;
-			header("Location: ../index.php?page=home");
+			header("Location: ../index.php?page=index&msg=loginsuccess");
 			die();
 		}
 	}

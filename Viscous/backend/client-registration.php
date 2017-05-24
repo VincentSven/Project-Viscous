@@ -73,7 +73,7 @@
 				header("Location: ../index.php?msg=registersuccess");
 				die();
 			} else {
-				echo 'ERROR'.$stmt_ins.'</br>'.$conn->error;
+				echo 'ERROR</br>'.$conn->error;
 			}
 	}
 	
