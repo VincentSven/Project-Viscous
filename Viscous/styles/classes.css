@@ -50,6 +50,17 @@
 	border-style: solid;
 }
 
+.center {
+	width: 200px;
+	margin: 0 auto;
+	overflow: none;
+}
+
+.center img {
+    width: 200px;
+    position: absolute;
+}
+
 .toe {
 	font-style:	italic;
 	width: 98%;
@@ -78,6 +89,17 @@
 
 .game_content {
 	text-align: center;
+	margin: 0 auto;
+	overflow: hidden;
+	z-index: 999;
+	position: relative;
+	width: 1000px;
+	height: 800px;
+}
+
+.g_wrapper {
+	width: 1000px;
+	margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {

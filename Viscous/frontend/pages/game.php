@@ -10,13 +10,12 @@
 		<script src="game/main.js" type="application/javascript"></script>
 	</head>
 	<body>
-	<?php require_once('frontend/templates/header.php') ;?>
-		<div id="page">
-			<div id="wrapper">
+		<div id="gamebg">
+			<div class="g_wrapper">
+				<div class="center"><img src="img/loading.gif"/></div>
 				<div class="spacer"></div>
 				<div class="game_content" id="game_content"></div>
 			</div>
 		</div>
-		<?php require_once 'frontend/templates/header.php'; ?>
 	</body>
 </html>

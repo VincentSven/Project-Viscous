@@ -39,6 +39,12 @@ header {
 	min-height: 40%;
 }
 
+#gamebg {
+	background-color: #2a2826;
+	height: 100%;
+	width: 100%;
+}
+
 .news_message {
 	margin: 0 0 10px 0;
 	border-style: solid;

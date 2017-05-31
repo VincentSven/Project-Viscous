@@ -1,7 +1,7 @@
 var TILE_SIZE = 32;
 //TODO dynamically load from map
 
-var game = new Phaser.Game(800, 600, Phaser.AUTO, "game_content", {
+var game = new Phaser.Game(1000, 800, Phaser.AUTO, "game_content", {
 	preload : preload,
 	create : create,
 	update : update,
@@ -18,7 +18,7 @@ function preload() {
 }
 
 function create() {
-	keys = { //TODO let user pick key layout?
+	keys = { //TODO let user pick key layout? - sick, but very far future thinking
 		up : game.input.keyboard.addKey(Phaser.Keyboard.W),
 		down : game.input.keyboard.addKey(Phaser.Keyboard.S),
 		left : game.input.keyboard.addKey(Phaser.Keyboard.A),
