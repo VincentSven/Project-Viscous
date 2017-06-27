@@ -8,9 +8,7 @@
 		
 		<script src="lib/jquery-3.2.1.min.js" type="text/javascript"></script>
 		<script type="text/javascript" id="newsscript">
-        	function loadNews() {
-           		var newsfeed = document.getElementById("newsfeed");
-				   		
+        	function loadNews() {				   		
            		jQuery.ajax({ 
            			type: "POST",
            			url: "backend/news.php",
@@ -19,7 +17,7 @@
            			
            			success: function(obj, status){
            				if( !('error' in obj) ) {
-                      		newsfeed.innerHTML = obj.news;
+                      		$("#newsfeed").html(obj.news);
                   		} else {
                       		console.log(obj.error);
                   		}
@@ -27,7 +25,7 @@
            		});
            		
            		var newsscript = document.getElementById("newsscript");
-           		newsscript.remove();
+           		$("#newsscript").remove();
            	}
         	window.onload = loadNews;
        	</script>

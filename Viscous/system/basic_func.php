@@ -21,6 +21,8 @@
 				require_once 'frontend/pages/registration.php';
 			}else if($page == "game") {
 				require_once 'frontend/pages/game.php';
+			}else if($page == "game1") {
+				require_once 'frontend/pages/game1.php';
 			}else if ($page == 'log_out') {
 				session_destroy();
 				echo 'logged out';
@@ -94,7 +96,12 @@
 	function getGlink(){
 		if(isset($_SESSION['loggedin'])){
 			?>
-				<a href="index.php?page=game"><div class="button">Spelen!</div></a>
+				<a href="index.php?page=game1">
+					<div class="button">Spelen! g1</div>
+				</a>
+				<a href="index.php?page=game">
+					<div class="button">Spelen!</div>
+				</a>
 			<?php
 		}
 	}
